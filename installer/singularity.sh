@@ -1,4 +1,4 @@
-# NOTE: This script does not resolve dependencies
+#!/bin/sh
 
 # Arguments
 version=$1
@@ -20,7 +20,7 @@ fi
 
 # download tarball
 wget "https://github.com/sylabs/singularity/releases/download/v${version}/${tar_file}"
-tar -xzf $tar_file
+tar -zxvf $tar_file
 cd $pkg_name
 
 # compile
