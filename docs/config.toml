@@ -1,4 +1,0 @@
-baseURL = 'https://yamatolab.github.io/installer'
-languageCode = 'en-us'
-title = 'Cluster Manager wiki'
-theme = "book"

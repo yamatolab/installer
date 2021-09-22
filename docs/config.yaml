@@ -1,0 +1,17 @@
+baseURL: https://yamatolab.github.io/installer
+languageCode: en-us
+title: Cluster Manager wiki
+theme: book
+
+editGitInfo: true
+
+menu:
+  after:
+    - name: "GitHub"
+      url: "https://github.com/yamatolab/installer"
+      wight: 80
+
+params:
+  BookTheme: auto
+  BookRepo: https://github.com/yamatolab/installer
+  BookEditPath: edit/main
