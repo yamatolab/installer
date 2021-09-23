@@ -4,12 +4,11 @@ proc ModulesHelp { } {
   puts stderr "gcc ___VERSION\n"
 }
 
-module-whatis "gcc $version"
+module-whatis "gcc ___VERSION"
 
 conflict gcc
 
-set version        ___VERSION
-set prefix         /usr/local/package/gcc/$version
+set prefix         /usr/local/package/gcc/___VERSION
 set bin_path       $prefix/bin
 set include_path $prefix/include
 set library_path $prefix/lib64

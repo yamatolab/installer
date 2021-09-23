@@ -4,12 +4,11 @@ proc ModulesHelp { } {
   puts stderr "__PACKAGE_NAME ___VERSION\n"
 }
 
-module-whatis "__PACKAGE_NAME $version"
+module-whatis "__PACKAGE_NAME ___VERSION"
 
 conflict __PACKAGE_NAME
 
-set version        ___VERSION
-set prefix         __PKG_ROOT/__PACKAGE_NAME/$version
+set prefix         __PKG_ROOT/__PACKAGE_NAME/___VERSION
 set bin_path       $prefix/bin
 # set include_path $prefix/include
 # set library_path $prefix/lib64
