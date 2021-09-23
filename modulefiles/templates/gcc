@@ -9,7 +9,7 @@ module-whatis "gcc $version"
 conflict gcc
 
 set version        ___VERSION
-set prefix         __PKG_ROOT/gcc/$version
+set prefix         /usr/local/package/gcc/$version
 set bin_path       $prefix/bin
 # set include_path $prefix/include
 # set library_path $prefix/lib64
