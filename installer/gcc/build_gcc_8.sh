@@ -12,7 +12,7 @@
 
 
 # Version of gcc being built (e.g. 8.1.0, or 8.2.0)
-gcc_version=8.2.0
+gcc_version=$1
 
 # Additional makefile options.  E.g., "-j 4" for parallel builds.  Parallel
 # builds are faster, however it can cause a build to fail if the project
