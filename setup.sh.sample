@@ -1,2 +1,2 @@
-PACKAGE_DIR_PREFIX="/usr/local/package"
-MODULEFILES_PREFIX="/etc/modulefiles"
+export PACKAGE_DIR_PREFIX=/usr/local/package
+export MODULEFILES_PREFIX=/etc/modulefiles
