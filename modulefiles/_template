@@ -9,7 +9,7 @@ module-whatis "__PACKAGE_NAME $version"
 conflict __PACKAGE_NAME
 
 set version        ___VERSION
-set prefix         __PREFIX/__PACKAGE_NAME/$version
+set prefix         __PKG_ROOT/__PACKAGE_NAME/$version
 set bin_path       $prefix/bin
 # set include_path $prefix/include
 # set library_path $prefix/lib64

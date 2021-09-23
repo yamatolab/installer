@@ -9,6 +9,6 @@ if [ -e $tmp_file ];then
 fi
 
 sed "s/__PACKAGE_NAME/$pkg_name/g" $template_file > $tmp_file
-sed "s/__PKG_ROOT/$PACKAGE_DIR_PREFIX/g" $tmp_file > $pkg_name
+sed "s/__PKG_ROOT/$PACKAGE_DIR_PREFIX/g" $tmp_file > templates/$pkg_name
 
 rm $tmp_file
