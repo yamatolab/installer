@@ -1,0 +1,24 @@
+#%Module1.0
+
+proc ModulesHelp { } {
+  puts stderr "gcc ___VERSION\n"
+}
+
+module-whatis "gcc $version"
+
+conflict gcc
+
+set version        ___VERSION
+set prefix         /gcc/$version
+set bin_path       $prefix/bin
+set include_path $prefix/include
+set library_path $prefix/lib64
+
+# Config by yourself
+prepend-path PATH $bin_path
+prepend-path FPATH $include_path
+prepend-path CPATH $include_path
+prepend-path INCLUDE_PATH $include_path
+prepend-path LIBRARY_PATH $library_path
+prepend-path LD_LIBRARY_PATH $library_path
+prepend-path MANPATH $prefix/share/man
