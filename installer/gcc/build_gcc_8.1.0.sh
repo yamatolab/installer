@@ -31,14 +31,14 @@ build_target=x86_64-unknown-linux-gnu
 #
 # WARNING: do not make 'source_dir' and 'build_dir' the same, or
 # subdirectory of each other! It will cause build problems.
-install_dir=${HOME}/opt/gcc-${gcc_version}
+install_dir=${PACKAGE_DIR_PREFIX}/gcc/${gcc_version}
 build_dir=/var/tmp/$(whoami)/gcc-${gcc_version}_build
 source_dir=/var/tmp/$(whoami)/gcc-${gcc_version}_source
 tarfile_dir=/var/tmp/$(whoami)/gcc-${gcc_version}_taballs
 
 # String which gets embedded into GCC verion info, can be accessed at
 # runtime. Use to indicate who/what/when has built this compiler.
-packageversion="$(whoami)-$(hostname -s)"
+packageversion="Built by yamatolab"
 
 # GCC requires that various tools and packages be available for use in the build
 # procedure, including several support libraries are necessary to build GCC. The
@@ -257,7 +257,7 @@ CC="$CC" CXX="$CXX" CFLAGS="$OPT_FLAGS" \
     --enable-__cxa_atexit \
     --disable-libunwind-exceptions \
     --enable-linker-build-id \
-    --enable-languages=c,c++,lto \
+    --enable-languages=c,c++,lto,fortran \
     --disable-vtable-verify \
     --with-default-libstdcxx-abi=new \
     --enable-libstdcxx-debug  \
